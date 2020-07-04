@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>create a simple calculator</title>
+
+   <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- custome css -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function calculate(x){
+            form.display.value +=x;
+        }
+    </script>
+  
+</head>
+<body>
+        <div class="calculator">
+            <form action="" name="form">
+                <input type="text" value="" name="display" class="form-control main-bar" placeholder="0">
+
+                <div class="button-area">
+                    <div class="line">
+                        <input type="button" name="btn" value="7" class="btn btn-primary" onclick="calculate(this.value )" >
+                        <input type="button" name="btn" value="8"  class="btn btn-primary" onclick="calculate(this.value )" >
+                        <input type="button" name="btn" value="9"  class="btn btn-primary" onclick="calculate(this.value )" >
+                        <input type="button" name="btn" value="+"  class="btn btn-warning" onclick="calculate(this.value )" >
+                    </div> <!-- /.line -->
+                    <div class="line">
+                        <input type="button" name="btn" value="4" class="btn btn-primary" onclick="calculate(this.value )" >
+                        <input type="button" name="btn" value="5"  class="btn btn-primary" onclick="calculate(this.value )" >
+                        <input type="button" name="btn" value="6"  class="btn btn-primary" onclick="calculate(this.value )" >
+                        <input type="button" name="btn" value="*"  class="btn btn-warning" onclick="calculate(this.value )" >
+                    </div> <!-- /.line -->
+                    <div class="line">
+                        <input type="button" name="btn" value="1" class="btn btn-primary" onclick="calculate(this.value )" >
+                        <input type="button" name="btn" value="2"  class="btn btn-primary" onclick="calculate(this.value )" >
+                        <input type="button" name="btn" value="3"  class="btn btn-primary" onclick="calculate(this.value )" >
+                        <input type="button" name="btn" value="-"  class="btn btn-warning" onclick="calculate(this.value )" >
+                    </div> <!-- /.line -->
+                    <div class="line">
+                        <input type="button" name="btn" value="0" class="btn btn-primary" onclick="calculate(this.value )" >
+                        <input type="button" name="btn" value="00"  class="btn btn-primary" onclick="calculate(this.value )" >
+                        <input type="button" name="btn" value="."  class="btn btn-primary" onclick="calculate(this.value )" >
+                        <input type="button" name="btn" value="/"  class="btn btn-warning" onclick="calculate(this.value )" >
+                    </div> <!-- /.line -->
+                    <div class="last">
+                        <input type="button" name="btn" value="c" class="btn btn-warning" onclick="display.value=null">
+                        <input type="button" name="btn" value="="  class="btn btn-warning" onclick="display.value=eval(display.value)" >
+                    </div> <!-- /.last -->
+                </div><!-- /.button-area -->
+            </form>  <!-- /.form  -->
+        </div> <!-- /.calculator -->
+
+</body>
+</html>
